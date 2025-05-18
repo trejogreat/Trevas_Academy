@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treva's Academy</title>
+  <style>
+    /* Reset and basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    /* Header styling */
+    header {
+      background: #35424a;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #c1c1c1;
+    }
+    /* Main content styling */
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 15px;
+    }
+    section ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    /* Form styling */
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    form button {
+      background: #35424a;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #1f2a30;
+    }
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #35424a;
+      color: #fff;
+    }
+    /* Responsive navigation for smaller screens */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Treva's Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+   </html><nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="python.html">Python</a>
+    <a href="html.html">HTML</a>
+    <a href="Cpp.html">C++</a>
+    <a href="javascript.html">JavaScript</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="login.html">Login</a>
+</nav>
+<div class="container">
+  <h3><strong><b>Learn C++ Programming</b></strong></h3>
+  <hr>
+</div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Trejo Great Academy</h2>
+      <p>
+        Welcome to Treva's Academy, where excellence meets passion for learning. Our mission is to empower students with the skills and insights needed for future success. Explore our innovative courses and join a community dedicated to growth and mastery.
+      </p>
+    </section>
+<a href="signup.html" class="course-tab">Enroll Now</a>
+    <!-- Courses Section -->
+    <section id="courses">
+      <h2>Our Courses</h2>
+      <ul>
+        <li>✅ Basic Syntax – Variables, data types, operators</li>
+        <li>✅ Control Structures – Loops (for, while), conditionals (if, switch)</li>
+        <li>✅ Functions – Defining and calling functions, parameters, return values</li>
+        <li>✅ Pointers & Memory Management – Understanding new, delete, and dynamic memory</li>
+       
+      </ul>
+    </section>
+    <h3><strong>JAVASCRIPT COURSES</strong></h3>
+    <p><b>🚀Courses</b></p>
+    <div class="container">
+  <div class="lessons">
+    <div class="lesson-box">
+      <h3>Lesson 1</h3>
+      <a href="#" class="lesson-button">Coming soon</a>
+    </div>
+    <div class="lesson-box">
+      <h3>Lesson 2</h3>
+      <a href="#" class="lesson-button coming-soon">Coming Soon</a>
+    </div>
+    <div class="lesson-box">
+      <h3>Lesson 3</h3>
+      <a href="#" class="lesson-button coming-soon">Coming Soon</a>
+    </div>
+    <div class="lesson-box">
+      <h3>Lesson 4</h3>
+      <a href="#" class="lesson-button coming-soon">Coming Soon</a>
+    </div>
+  </div>
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Trejo Great Academy. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Interactivity -->
+  <script>
+    // Handling the submission of the contact form
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      let name = document.getElementById('name').value;
+      alert("Thank you, " + name + "! Your message has been received. We will get back to you shortly.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+<style>
+    .navbar {
+    background-color: #0d47a1; /* Dark Blue */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #1565c0; /* Slightly lighter blue on hover */
+}
+ <style>
+        /* General Page Styling */
+        body {
+            background: linear-gradient(120deg, #0d47a1, #1565c0); /* Deep Blue */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1); /* Transparent White Layer */
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #ffea00; /* Bright Yellow */
+            text-transform: uppercase;
+        }
+
+        /* Course Overview */
+        .course-info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Course Tabs */
+        .course-tab {
+            display: inline-block;
+            background-color: #ff5722; /* Orange Button */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .course-tab:hover {
+            background-color: #e64a19; /* Darker Orange */
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        .container {
+    width: 90%; /* Adapts to screen size */
+    margin: auto;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .navbar a {
+        display: block; /* Stack links vertically on smaller screens */
+        text-align: center;
+    }
+}
+.lessons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lesson-box {
+  background-color: #333;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.lesson-button {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: #FFB347;
+}
+
+.lesson-button.coming-soon {
+  background-color: #FFB347;
+  pointer-events: none;
+}
+      </style>
+    

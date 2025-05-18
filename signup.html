@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Trejo Great Academy</title>
+  <body>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #35424a, #212831);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      outline: none;
+    }
+    .input-field::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .input-field:focus {
+      border: 2px solid #f4b400;
+    }
+    .btn {
+      background: #f4b400;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #d69700;
+    }
+    .message {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    a {
+      color: #f4b400;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form action="index.html" method="POST">
+      <input type="text" class="input-field" id="name" placeholder="Full Name" required>
+      <input type="email" class="input-field" id="email" placeholder="Email" required>
+      <input type="password" class="input-field" id="password" placeholder="Password" required>
+      <input type="password" class="input-field" id="confirmPassword" placeholder="Confirm Password" required>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p class="message">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+    <!-- Place JavaScript script right before closing body tag -->
+    <script>
+        function validateSignup() {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password === "" || confirmPassword === "") {
+                alert("Please enter both password fields!");
+                return false; // Prevent signup
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please try again!");
+                return false; // Prevent signup
+            }
+
+            // Redirect to login.html after successful signup
+            alert("Signup successful! Redirecting to login page.");
+            window.location.href = "login.html";
+            return false; // Stop actual form submission
+        }
+    </script>
+</body>
+</html>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      let password = document.getElementById('password').value;
+      let confirmPassword = document.getElementById('confirmPassword').value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+      } else {
+        alert("Signup successful! Welcome to Trejo Great Academy.");
+        this.reset();
+      }
+    }
+  </script><script>
+function validateSignup() {
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password === "" || confirmPassword === "") {
+        alert("Please enter both password fields!");
+        return false; // Prevent signup
+    }
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again!");
+        return false; // Prevent signup
+    }
+
+    // Redirect to login.html after successful signup
+    alert("Signup successful! Redirecting to login page.");
+    window.location.href = "login.html";
+    return false; // Stop actual form submission
+}
+document.addEventListener("keydown", function(event) {
+    if ((event.ctrlKey && event.key === "z") || (event.ctrlKey && event.key === "y")) {
+        event.preventDefault(); // Block undo & redo shortcuts
+        alert("Undo/Redo is disabled!");
+    }
+});
+window.history.pushState(null, "", window.location.href);
+window.addEventListener("popstate", function() {
+    window.history.pushState(null, "", window.location.href);
+    alert("You cannot go back without completing signup!");
+});
+</script>
+</script>
+</script>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Trejo Great Academy</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #35424a, #212831);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            outline: none;
+        }
+        .input-field::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .input-field:focus {
+            border: 2px solid #f4b400;
+        }
+        .btn {
+            background: #f4b400;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #d69700;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        a {
+            color: #f4b400;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form action="index.html" method="POST">
+            <input type="email" class="input-field" name="email" placeholder="Email" required>
+            <input type="password" class="input-field" name="password" placeholder="Password" required>
+           <form onsubmit="return validateLogin()">
+    <button type="submit" class="btn">Login</button>
+</form>
+        </form>
+        <p class="message">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+</body>
+</html>
+<script>
+function validateLogin() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if (email === "" || password === "") {
+        alert("Please fill in all fields before logging in!");
+        return false; // Prevent login
+    }
+
+    // Redirect to index.html after valid input
+    window.location.href = "index.html";
+    return false; // Stop actual form submission
+}
+
+document.addEventListener("keydown", function(event) {
+    if ((event.ctrlKey && event.key === "z") || (event.ctrlKey && event.key === "y")) {
+        event.preventDefault(); // Block undo & redo shortcuts
+        alert("Undo/Redo is disabled!");
+    }
+});
+
+window.history.pushState(null, "", window.location.href);
+window.addEventListener("popstate", function() {
+    window.history.pushState(null, "", window.location.href);
+    alert("You cannot go back without logging in!");
+});
+</script>
+</body>
+</html>
+</script>
