@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Lesson 1 - Introduction</title>
+    <style>
+        /* General Page Styling */
+        body {
+            background-color: #F0F0F0; /* Dull white */
+            color: black;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        /* Container Styling */
+        .container {
+            background-color: #FFFFFF; /* Bright white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        /* Code Block Styling */
+        pre {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            color: #00FF00; /* Lime green for code */
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        
+        h1, h2 {
+            color: #006400; /* Dark Green */
+            text-align: center;
+        }
+        
+        /* Additional Lesson Sections */
+        .lesson-section {
+            margin-top: 20px;
+        }
+
+        /* Callout Box for Key Points */
+        .callout {
+            background-color: #FFFAE6; /* Light yellow */
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #FFD700; /* Golden accent */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lesson 1: Introduction to Python</h1>
+        <hr>
+        <p>Python is a powerful, beginner-friendly programming language that emphasizes readability and simplicity.</p>
+
+        <div class="callout">
+            Why Python?  
+            - Easy to learn  
+            - Versatile (Web, AI, Automation, Data Science)  
+            - Huge community support
+        </div>
+
+        <div class="lesson-section">
+            <h2>1. Writing Your First Python Program</h2>
+            <p>Let's start with a basic print statement:</p>
+            <pre>
+print("Hello, world!")
+            </pre>
+            <p>This command outputs **Hello, world!** to the screen.</p>
+        </div>
+
+        <div class="lesson-section">
+            <h2>2. Python Syntax & Indentation</h2>
+            <p>Unlike other languages, Python uses indentation instead of curly brackets for defining blocks:</p>
+            <pre>
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Treva")
+            </pre>
+            <p>Proper indentation is **mandatory** in Python—it ensures code structure and readability.</p>
+        </div>
+
+        <div class="lesson-section">
+            <h2>3. Variables & Data Types</h2>
+            <p>Python can store different types of data using variables:</p>
+            <pre>
+name = "Treva"  # String
+age = 25  # Integer
+height = 5.9  # Float
+is_student = False  # Boolean
+            </pre>
+            <p>Each type serves a different role in programming.</p>
+        </div>
+
+        <div class="lesson-section">
+            <h2>4. User Input</h2>
+            <p>Python allows users to enter input, making programs interactive:</p>
+            <pre>
+user_name = input("Enter your name: ")
+print(f"Welcome, {user_name}!")
+            </pre>
+        </div>
+
+        <div class="lesson-section">
+            <h2>5. Practice Challenge</h2>
+            <p>Try creating a program that asks for a user's favorite color and prints a message including their input.</p>
+            <p><strong>Hint:</strong> Use the <code>input()</code> function like in the example above!</p>
+        </div>
+
+        <p style="text-align: center;">🟢 Ready for the next lesson? Continue to Python Lesson 2!</p>
+    </div>
+
+</body>
+</html>
+<a href="python.html" class="python-button">Python Page</a>
+<style>
+    .python-button {
+  display: inline-block;
+  background-color: #006400; /* Dark Green */
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 2px solid #004D00; /* Slightly darker border */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.python-button:hover {
+  background-color: #008000; /* Brighter green */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.container {
+    width: 90%; /* Adapts to screen size */
+    margin: auto;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .navbar a {
+        display: block; /* Stack links vertically on smaller screens */
+        text-align: center;
+    }
+}
